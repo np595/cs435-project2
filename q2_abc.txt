@@ -1,0 +1,3 @@
+a. As a graph, the nodes would be places in the maze to go, including cheese destination: 26 nodes
+b. The edges represent valid movements you can make: up, down, left, right.
+c. The graph is undirected - you can move back and forth between locations, as you would if backtracking. The graph is connected, because you have to go through the maze to get to any other location. It is also unweighted and acyclic - there are no 'loops' in the maze.

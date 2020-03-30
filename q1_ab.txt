@@ -1,0 +1,14 @@
+# example bfs
+S, A, C, B, E, F, G, K, L, D
+
+# adjacency list
+S: [A]
+C: [A]
+A: [S, C, B, E]
+B: [A, E]
+E: [A, F]
+F: [E, G]
+G: [F, K]
+K: [G, L]
+L: [K, D]
+D: [L]
