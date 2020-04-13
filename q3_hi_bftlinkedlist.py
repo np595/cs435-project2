@@ -2,6 +2,9 @@ from q3_c_linkedlist import createLinkedList
 from q3_defg_graphsearch import GraphSearch
 from sys import setrecursionlimit
 
+#This is more of a side comment about the git organization, but you could use folders by typing in the folder name first in the filename
+#Then adding a / to it, like Problem3/q3_hi_bftlinkedlist.py that way you could keep things in categories. Just a nitpick
+
 def BFTRecLinkedList(graph):
   search = GraphSearch(graph)
   return search.BFTRec()
