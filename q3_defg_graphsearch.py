@@ -2,7 +2,8 @@ from q3_a_graphclass import Graph
 from q3_b_randomunweighted import createRandomUnweightedGraphIter
 from q3_c_linkedlist import createLinkedList
 from queue import Queue
-
+#For a bit of house cleaning, you could protentially just separate DFS from BFT into two separate projects. 
+#That way you can get results for one or the other without shifting around values
 class GraphSearch:
   def __init__(self, graph):
     self.graph = graph
@@ -55,7 +56,7 @@ class GraphSearch:
       helper(node_q)
     helper(node_q)
     return out
-    
+ #You could also just set visited as a value within node as a true or false statement that would be set to false naturally on creation
   def BFTIter(self):
     out = []
     node_q = Queue()
@@ -72,7 +73,7 @@ class GraphSearch:
               visited[adj] = True
               node_q.put(adj)
     return out
-
+#I like how you made a normal node array for the nodes to use throughout the project to keep things organized instead of alternate methods
 # for testing
 if __name__ == '__main__':
   search = GraphSearch(createRandomUnweightedGraphIter(10))
